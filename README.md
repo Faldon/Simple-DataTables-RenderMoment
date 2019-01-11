@@ -2,6 +2,7 @@
 [![license](https://img.shields.io/github/license/Faldon/Simple-DataTables-RenderMoment.svg?style=plastic)](https://github.com/Faldon/Simple-DataTables-RenderMoment/blob/master/LICENSE)
 ![](https://img.shields.io/github/size/Faldon/Simple-DataTables-RenderMoment/src/datatable.rendermoment.js.svg?style=plastic)
 ![](https://img.shields.io/github/size/Faldon/Simple-DataTables-RenderMoment/dist/datatable.rendermoment.min.js.svg?label=minified&style=plastic)
+![](https://img.shields.io/github/release/Faldon/Simple-DataTables-RenderMoment.svg?style=plastic)
 
 Plugin for [fiduswriter/Simple-DataTables](https://github.com/fiduswriter/Simple-DataTables) that enables individual
 rendering and sorting of date-type columns. 
