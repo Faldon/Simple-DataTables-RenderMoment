@@ -22,15 +22,15 @@ if (window.DataTable) {
     let config = {
       // format is the date format used for parsing the date
       format: 'YYYY-MM-DD'
-    }
+    };
 
     const DateTimeRenderer = function () {
       // To use the render function as a kind of static method, the config
       // property has to be set on the object, if it is not instantiated
       if (!this.initialised) {
-        config = Object.assign(config, options)
+        config = Object.assign(config, options);
       }
-    }
+    };
 
     /**
      * Initialise instance of DateTimeRenderer
@@ -38,10 +38,10 @@ if (window.DataTable) {
      */
     DateTimeRenderer.prototype.init = function () {
       if (!this.initialised) {
-        this.config = Object.assign(config, options)
-        this.initialised = true
+        this.config = Object.assign(config, options);
+        this.initialised = true;
       }
-    }
+    };
 
     /**
      * Render the date in the desired format
@@ -62,7 +62,7 @@ if (window.DataTable) {
      * @return {String} The date or an empty string
      */
     DateTimeRenderer.prototype.render = function (data, cell, row) {
-      let th = row.closest('table').tHead.children[0].children[cell.cellIndex]
+      let th = row.closest('table').tHead.children[0].children[cell.cellIndex];
       if (!th.dataset.hasOwnProperty('type') || 'date' !== th.dataset.type) {
         return data;
       }
@@ -71,11 +71,11 @@ if (window.DataTable) {
       let format = this.initialised ? this.config.format : config.format;
       let date = moment(data, format);
       if (!date.isValid()) {
-        return ''
+        return '';
       }
       return date.format(renderer);
-    }
+    };
 
-    return new DateTimeRenderer()
+    return new DateTimeRenderer();
   })
 }
