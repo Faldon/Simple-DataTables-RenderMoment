@@ -10,9 +10,13 @@ rendering and sorting of date-type columns.
 ---
 
 ## Install
-You can download the [latest regular script](https://raw.githubusercontent.com/Faldon/Simple-DataTables-RenderMoment/master/src/datatable.rendermoment.js) 
-or choose to use the [latest minified version](https://raw.githubusercontent.com/Faldon/Simple-DataTables-RenderMoment/master/dist/datatable.rendermoment.min.js)
-for production environments. 
+### Latest GitHub Download
++ Full: <https://raw.githubusercontent.com/Faldon/Simple-DataTables-RenderMoment/master/src/datatable.rendermoment.js>
++ Minified: <https://raw.githubusercontent.com/Faldon/Simple-DataTables-RenderMoment/master/dist/datatable.rendermoment.min.js>
+
+### JsDelivr CDN
++ Full: <https://cdn.jsdelivr.net/gh/Faldon/Simple-DataTables-RenderMoment@latest/src/datatable.rendermoment.js>
++ Minified: <https://cdn.jsdelivr.net/gh/Faldon/Simple-DataTables-RenderMoment@latest/dist/datatable.rendermoment.min.js>
 
 ### Usage
 Make sure the plugin is included __after__ Simple-DataTables:
@@ -22,7 +26,8 @@ Make sure the plugin is included __after__ Simple-DataTables:
    <script src="path/to/datatable.rendermoment.min.js"></script>
 ```
 If you encounter problems when trying to use Simple-DataTables in browser mode, I forked it and adjusted the build
-configuration to build an iife module [here](https://github.com/Faldon/Simple-DataTables/tree/iife).
+configuration to build an iife module [here](https://github.com/Faldon/Simple-DataTables/tree/iife). I also put a compiled,
+minified version into the repo for accessing it through JsDelivr [here](https://cdn.jsdelivr.net/gh/Faldon/Simple-DataTables@2de69c82d51e3af9792ff3239c1fd8ef92c5bd21/dist/index.js). 
 
 then:
  
@@ -46,6 +51,8 @@ Than you assign the render function as `render: window.DataTable.prototype.rende
 where `%format%` should be the date format your data will be served to the table.  
  
 That's it!
+
+[DEMO](https://jsfiddle.net/pjcm67at/1/)
 
 ---
   
